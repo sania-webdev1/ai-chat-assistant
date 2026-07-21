@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Chat Assistant - Sania Portfolio</title>
+  <link rel="stylesheet" href="ai-chat.css?v=2">
+</head>
+<body>
+  <div class="container">
+    <div class="ai-mockup">
+      <div class="chat-header">
+        <div class="dots">
+          <div class="dot green"></div>
+          <div class="dot yellow"></div>
+          <div class="dot red"></div>
+        </div>
+    
+        <span>AI Chat Assistant</span>
+        <button onclick="newChat()">New Chat</button>
+        <button onclick="downloadChat()">Download Chat</button>
+        <button onclick="window.print()">Export PDF</button>
+        <button class="clear-btn" onclick="clearChat()">Clear</button>
+        <button onclick="toggleDark()">🌙</button>
+      </div>
+
+      <div class="chat-body" id="chatBody">
+        <div class="msg bot">Hello! How can I help you today? 😊</div>
+
+        </div>
+      
+<!-- Typing Animation -->
+<div id="typing" class="typing" style="display:none;">
+    <span></span><span></span><span></span>
+</div>
+
+
+
+      <div class="suggestions">
+  <button onclick="sendSuggestion('Write a blog')">Write a Blog</button>
+  <button onclick="sendSuggestion('Make me a CV')">Make CV</button>
+  <button onclick="sendSuggestion('Explain HTML')">Explain HTML</button>
+  <button onclick="sendSuggestion('Code in Python')">Code Help</button>
+    <button onclick="sendSuggestion('Write SEO Blog')">SEO Blog</button>
+    <button onclick="sendSuggestion('Make Professional CV')">Pro CV</button>
+    <button onclick="sendSuggestion('Write Fiverr Gig')">Fiverr Gig</button>
+    <button onclick="sendSuggestion('Translate to English')">Translation</button>
+    <button onclick="sendSuggestion('Write Social Post')">Social Post</button>
+    <button onclick="sendSuggestion('Debug Code')">Code Debug</button>
+</div>
+
+
+      <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Type your message..." onkeypress="if(event.key==='Enter') sendMessage()">
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div> <!-- ai-mockup band -->
+  </div> <!-- container band -->
+
+  <script src="ai-chat.js"></script>
+</body>
+</html>
