@@ -6,12 +6,17 @@ body {
   justify-content: center; 
   align-items: center; 
   height: 100vh; 
+  padding:20px;
+  box-sizing:border-box;
 }
 
 
 .container {
   width:100px;
   padding: 10px;
+  display:flex;
+  justify-content:center;
+  align-item:center;
 }
 .ai-mockup { 
   width: 100px; 
