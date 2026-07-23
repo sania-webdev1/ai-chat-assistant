@@ -9,7 +9,10 @@ body {
 }
 
 
-.container
+.container {
+  width:100%;
+  padding: 10px;
+}
 .ai-mockup { 
   width: 100px; 
   height: 450px; 
