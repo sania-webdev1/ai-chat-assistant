@@ -6,6 +6,7 @@ body {
   justify-content: center; 
   align-items: center; 
   height: 100vh; 
+  
   padding:20px;
   box-sizing:border-box;
 }
@@ -15,19 +16,28 @@ body {
   width:100px;
   padding: 10px;
   display:flex;
+  
   justify-content:center;
   align-item:center;
 }
 .ai-mockup { 
-  width: 100px; 
-  height: 450px;
+  width: 100%; 
+  height: 90vh;
   margin:0 auto;
   background: #1e1e1e; 
   border-radius: 15px; 
   overflow: hidden; 
   display: flex; 
   flex-direction: column; 
-  box-shadow: 0 10px 40px rgba(0,0,0,0.3); 
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+
+  max-height:700px;
+}
+
+.chat-messages{
+  flex:1;
+  overflow-y:auto;
+  padding:15px;
 }
 
 * {
