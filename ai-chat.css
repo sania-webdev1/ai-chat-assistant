@@ -33,10 +33,9 @@ body {
   padding: 15px;
 }
 
-/* MOBILE KE LIYE ALAG RULE */
 @media (max-width: 600px) {
   .ai-mockup {
-    height: 75vh; /* mobile pe 75% screen hi lega */
+    height: 65vh; /* mobile pe 75% screen hi lega */
     margin: 10px auto;
   }
   
