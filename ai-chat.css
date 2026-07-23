@@ -8,12 +8,7 @@ body {
   height: 100vh; 
 }
 
-.container {
-  width: 100%;
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 10px;
-}
+
 
 .ai-mockup { 
   width: 450px; 
