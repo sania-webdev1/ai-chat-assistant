@@ -10,11 +10,12 @@ body {
 
 
 .container {
-  width:100%;
+  width:100px;
   padding: 10px;
 }
 .ai-mockup { 
-  width: 100%; 
+  width: 100px; 
+  height: 450px;
   margin:0 auto;
   background: #1e1e1e; 
   border-radius: 15px; 
