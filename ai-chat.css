@@ -35,7 +35,7 @@ body {
 
 @media (max-width: 600px) {
   .ai-mockup {
-    height: 65vh; /* mobile pe 75% screen hi lega */
+    height: 45vh; 
     margin: 10px auto;
   }
   
