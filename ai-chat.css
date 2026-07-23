@@ -11,8 +11,8 @@ body {
 
 .container
 .ai-mockup { 
-  width: 450px; 
-  height: 600px; 
+  width: 100px; 
+  height: 450px; 
   background: #1e1e1e; 
   border-radius: 15px; 
   overflow: hidden; 
