@@ -9,7 +9,7 @@ $apiKey = "yahan_api_key_lagani_h";
 $url = "https://api.groq.com/openai/v1/chat/completions"; // ;
 
 $postData = json_encode([
-    "model" => "llama-3.1-8b-instant",
+    "model" => "llama-3.3-70b-versatile",
     "messages" => [
         ["role" => "system", "content" => "You are Sania's AI Assistant. Reply in friendly Roman Urdu."],
         ["role" => "user", "content" => $msg]
