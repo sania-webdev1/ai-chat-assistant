@@ -81,4 +81,40 @@ document.getElementById("userInput").addEventListener("keypress", function(e) {
 function sendSuggestion(text) {
     document.getElementById('userInput').value = text;
     sendMessage(); // ye wala function tumhare pass pehle se hoga
+
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+  const micBtn = document.getElementById('mic-btn');
+  const micIcon = document.getElementById('mic-icon');
+  const userInput = document.getElementById('userInput');
+
+  if(!micBtn) { alert('Mic button not found'); return; }
+
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  
+  if (!SpeechRecognition) { 
+    alert('Browser does not support Speech'); 
+    micBtn.style.display = 'none';
+    return; 
+  }
+
+  const recognition = new SpeechRecognition();
+  recognition.lang = 'ur-PK'; // Urdu test karte hain
+  recognition.continuous = false;
+
+  micBtn.onclick = () => {
+    recognition.start();
+    micIcon.style.fill = 'red';
+    alert('Listening... bolo');
+  };
+
+  recognition.onresult = (event) => {
+    userInput.value = event.results[0][0].transcript;
+    alert('Got: ' + event.results[0][0].transcript);
+  };
+
+  recognition.onend = () => { micIcon.style.fill = '#8b5cf6'; };
+  recognition.onerror = (e) => { alert('Error: ' + e.error); };
+});
 }
